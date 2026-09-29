@@ -1,0 +1,19 @@
+python -m venv .venv 
+(Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned) ; (& c:\Users\Unigran\Desktop\aulass\PASTA\.venv\Scripts\Activate.ps1)
+
+pip install django
+django-admin --version
+
+ - CONFIGURAR APENAS UM DELES:
+    asgi - apache
+    wsgi - ngix - sequenciar fila no BD
+
+django-admin startproject app .
+python manage.py runserver
+
+python manage.py makemigrations - ve tudo o que mudou
+python manage.py migrate - executa toda a migração
+
+python manage.py createsuperuser
+
+pip install django-jazzmin==3.0.1
